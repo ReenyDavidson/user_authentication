@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block head%}
+
+{% endblock%}
+
+{% block body%}
+
+<form action="", method="POST">
+    <div class="box">
+        <h2>Login</h2>
+        {{form.hidden_tag()}}
+        <div>
+            <fieldset>
+                <div  class="input-container">
+                    {{form.textfile}} 
+                    <span class="focus-border"></span><br>
+                    {% for error in form.textfile.error %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div> <br>
+                {{form.submit  (class="button")}}
+            </fieldset>
+       </div>
+</form>
+
+{% endblock%}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head%}
+
+{% endblock%}
+
+{% block body%}
+<div>
+    <h1>welcome {{ current_user.username}}</h1>
+    <a href="logout">logout</a>
+</div>
+
+<div>
+    {%for post in posts %}
+        <h1>{{ post.textfile }}</h1>
+        <p>{{post.author.username}}</p>
+        <p>{{post.datetime}}</p> 
+    {%endfor %}    
+</div>
+
+{% endblock%}
