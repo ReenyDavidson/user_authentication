@@ -1,5 +1,5 @@
 from flask import Flask, redirect, url_for, render_template
-from datetime import datetime, timedelta
+from datetime import datetime
 from flask_wtf import FlaskForm
 from flask_sqlalchemy import SQLAlchemy
 from wtforms import StringField, PasswordField, BooleanField, SubmitField
